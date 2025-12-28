@@ -171,7 +171,7 @@ for retailer in monthly_scans['retailer'].unique():
 
 # combine and export report
 predictions_df = pd.concat(company_predictions, ignore_index=True)
-export_path = "/Users/phood/Downloads/hybrid_montly_predictions.xlsx"
+export_path = "file_path"
 predictions_df.to_excel(export_path, index=False)
 
 print(f"Hybrid predictions exported to {export_path}")
